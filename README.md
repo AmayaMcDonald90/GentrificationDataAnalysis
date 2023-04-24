@@ -120,4 +120,4 @@ All code in this repository is available under the [MIT License](https://opensou
 
 ## Feedback / Questions?
 
-Contact YOUR NAME HERE at your.name@email.com.
+Contact Amaya McDonald at amaya.mcdonald90@journalism.cuny.edu

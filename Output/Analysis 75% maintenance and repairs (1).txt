@@ -1,0 +1,102 @@
+﻿Are landlords spending 75% of their income on gentrified or ungentrified neighborhoods?
+
+
+
+
+For this step, I parted from the data we presented on the first assignment. My analysis is based on the 5 - v-lookup add gentrified info as I considered the ethnic information added in the following steps inessential to the analysis of expenses for maintenance and repairs in gentrified and non-gentifried areas in New York city.
+Link to the data: https://docs.google.com/spreadsheets/d/10ELkgR6f-pkw4gif_6agxBGS2qUyve3AYtRgtDrh2zM/edit#gid=1485466940
+
+
+Methodology:
+
+
+1. On my copy of  5 - v-lookup add, I deleted the columns of: Office. Owner Related Space, Gov. Rental, Authorized Lease and Tenant. Imp costs and Filling Year to better identify numbers of select buildings/rental properties.
+
+
+2. I created a column named “% of Repairs and Maint from Total Expenses.”
+
+
+3. I calculated the percentages used from the total expenses by using the function Divide ( =DIVIDE(Repairs and Maint, Total Expenses)  ) then, I changed the result to a percentage format.
+
+
+4.  I used conditional formatting to the “% of Repairs and Maint from Total Expenses” to have a better visualization of the values. 
+
+
+5. I created another sheet where I filtered the gentrified areas (filtered copy of 5- Gentrified repair/ maintenance.) and added the Z-A filter to visualize the highest expenses on the maintenance and repairs of the properties. 
+
+
+6. In that same sheet, I used the average function to get an idea of the standard percentage from the data we have. 
+
+
+7. I created another sheet where I filtered the non-gentrified areas (filtered copy of 5- NonGentrified repair/ maintenance.) and added the Z-A filter to visualize the highest expenses on the maintenance and repairs of the  properties. 
+
+
+8. In that same sheet, I used the average function to get an idea of the standard percentage from the data we have. 
+
+
+
+
+
+
+
+
+What I found:
+
+
+* None of the properties that were analyzed complied with the requirement established by the University Neighborhood Housing Program (UNHP), of the 75% or more of the expenses destined to the maintenance and repairs of the property.
+
+
+* In gentrified areas in NYC, based on the data we have, the highest percentage of expenses destined to the maintenance of the property is 65.2%. The lowest is 1.38%.
+
+
+* In non-gentrified areas in  NYC, based on the data we have, the highest percentage of expenses destined to the maintenance of the property is 72.38%. The lowest is 0.61%.
+
+
+* In gentrified areas, the average of the expenses destined to the maintenance and repairs of properties is 20.24%.
+
+
+* In non-gentrified areas, the average of the expenses destined to the maintenance and repairs of properties is 20.61%.
+
+
+Analysis:
+The point of this analysis is to identify any pattern present in the amounts of money landlords use across the city of New York to address repairs and maintenance to their properties that are destined to rented residencies.
+
+
+Real estate speculation happens when investors acquire properties with the goal of getting profits at the time of later selling those same properties. The increase in the price of the properties could be obtained from improvements of the property and if the property is in high-growth areas. 
+
+
+In New York City, according to articles and studies, real state speculation is happening  in certain parts of the city by avoiding the maintenance and repairments of the properties, driving poor housing quality, which can lead to constructive evictions (the lack of actions by the landlord that makes a rental property unsuitable to serve as a residence.)
+
+
+In the analysis we made, none of the properties that were analyzed complied with the requirement stated by the University Neighborhood Housing Program (UNHP), which says that 75% or more of the expenses should be destined for the maintenance and repairs of the property. In gentrified and in non-gentrified areas, the average of the expenses used in the maintenance of the properties was about 20% of the whole expenses.
+
+
+However, it is worth mentioning that the properties with the least percentage destined for repairs and maintenance were located in areas categorized as gentrified. This could open the possibility of exploring properties in gentrified areas to look for people who are at risk of being forced to move out.
+
+
+
+
+Highest values Non-gentrified areas: 
+% OF REPAIRS AND MAINT FROM TOTAL EXPENSES
+	72.38%
+	70.16%
+	67.53%
+	67.05%
+	65.02%
+	
+
+
+
+Highest values in gentrified areas: 
+% OF REPAIRS AND MAINT FROM TOTAL EXPENSES
+	65.20%
+	57.92%
+	56.41%
+	48.31%
+	45.23%
+	
+
+Additionally, we can also open room to visit properties that receive less than 2% of the expenses in maintenance and listen to tenants’ point of views and experiences 
+
+
+It is important to clarify this analysis doesn’t intend to give an accurate conclusion about New York City. We are working only with segments of data obtained from the city.

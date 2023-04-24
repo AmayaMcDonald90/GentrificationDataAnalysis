@@ -1,0 +1,56 @@
+Dashiell Allen - 4/23/2023
+
+Attempt at merging BBL and census tracts data:
+
+1. I downloaded PLUTO data from the Department of City Planning (https://www.nyc.gov/site/planning/data-maps/open-data/dwn-pluto-mappluto.page) 
+
+PLUTO data contains a csv file with 858,619 rows - including borough block and lot, and 2020 census tracts for each 
+
+2. I uploaded PLUTO data to a jupyter notebook (= pluto_data)
+
+3. I uploaded demographic/gentrification data for New York City to the same jupyter notebook
+(= census_data)
+
+4. In pluto_data the column 'bctcb2020' lists the 2020 census tracts as 11-integer codes 
+	I changed 'bctcb2020' to a string:
+	pluto_data['bctcb2020'] = pluto_data['bctcb2020'].astype(str) 
+
+	I applied a function to read just the first 11 integers of 'bctcb2020': 
+	pluto_data['bctcb2020'] = pluto_data['bctcb2020'].apply(lambda x: x[:11])
+
+5. (For the census/demographic data, before I uploaded I changed the column 'GEOID' to match 'bctcb2020' in google sheets to facilitate merging) 
+	I changed 'bctcb2020' in census_data to a string: 
+	census_data['bctcb2020'] = census_data['bctcb2020'].astype(str)
+
+6. I merged census_data and pluto_data: 
+	census_and_pluto_data = pd.merge(
+    census_data,
+    pluto_data,
+    on= 'bctcb2020',
+    how = 'inner'
+)
+
+7. I viewed the merged data: census_and_pluto_data 
+
+	The result: '0 rows × 111 columns'
+
+CONCLUSION: The demographic/gentrification data was created using earlier census tracts, for which there aren't an equivalent in pluto_data. 
+
+FULL PYTHON SCRIPT: 
+
+import pandas as pd
+census_data = pd.read_csv ('../data/newyorkdata1.csv')
+pluto_data = pd.read_csv ('../data/pluto_22v3_1.csv')
+pluto_data
+pluto_data['bctcb2020'] = pluto_data['bctcb2020'].astype(str)
+pluto_data.head()
+pluto_data['bctcb2020'] = pluto_data['bctcb2020'].apply(lambda x: x[:11])
+pluto_data.head()
+census_data['bctcb2020'] = census_data['bctcb2020'].astype(str)
+census_and_pluto_data = pd.merge(
+    census_data,
+    pluto_data,
+    on= 'bctcb2020',
+    how = 'inner'
+)
+census_and_pluto_data
